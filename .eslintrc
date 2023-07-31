@@ -1,0 +1,63 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["@typescript-eslint", "import", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "overrides": [],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "map": [["@", "."]]
+      }
+    }
+  },
+  "rules": {
+    "import/order": "off",
+    "prettier/prettier": "error",
+    "jsx-a11y/href-no-hash": ["off"],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "import/extensions": [
+      "error",
+      {
+        "defaultFrom": "ignorePackages"
+      }
+    ],
+    "no-restricted-exports": "off",
+    "react/require-default-props": "off",
+    "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": false }],
+    "max-len": [
+      "warn",
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "comments": 120,
+        "ignoreComments": false,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "padding-line-between-statements": ["error", { "blankLine": "always", "prev": "*", "next": "return" }],
+  }
+}
