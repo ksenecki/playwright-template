@@ -7,7 +7,7 @@ REST API tests for `https://jsonplaceholder.typicode.com/`
 
 ## Project requirements
 
-1. [Node 18+](https://nodejs.org/en/docs/)
+1. [Node 18](https://nodejs.org/en/docs/)
 2. [npm 9.6.7](https://www.npmjs.com/)
 
 ## How to setup the Project
