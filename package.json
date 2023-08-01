@@ -1,14 +1,16 @@
 {
   "name": "playwright-template",
   "version": "1.0.0",
-  "description": "Universal Playwright test template",
+  "description": "Playwright test template",
   "main": "index.js",
   "scripts": {
     "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
     "tests:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
     "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "tests:api": "playwright test --config=api.config.ts --project=Chromium",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
+    "prettier": "npx prettier . --write",
     "lint": "eslint ."
   },
   "repository": {
@@ -18,21 +20,22 @@
   "keywords": [
     "playwright",
     "template",
-    "tests"
+    "tests",
+    "supertest"
   ],
   "author": "ksenecki",
   "license": "ISC",
-  "dependencies": {
-    "@playwright/test": "^1.36.2",
-    "playwright": "^1.36.2"
-  },
   "devDependencies": {
+    "@playwright/test": "^1.36.2",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@types/supertest": "^2.0.12",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^8.9.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
-    "prettier": "3.0.0"
+    "prettier": "3.0.0",
+    "supertest": "^6.3.3",
+    "typescript": "^5.1.6"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown --no-stash",
