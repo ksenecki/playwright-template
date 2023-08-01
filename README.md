@@ -1,8 +1,8 @@
-# Pandas-Playwright-Playground
+# Playwright Template
 
 [Playwright](https://playwright.dev/) 1.36 test template.
 
-E2E tests for `https://www.saucedemo.com/`
+E2E tests for `https://www.saucedemo.com/`  
 REST API tests for `https://jsonplaceholder.typicode.com/`
 
 ## Project requirements
