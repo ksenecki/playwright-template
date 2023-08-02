@@ -2,7 +2,7 @@ import { HomePage } from '@page-objects/HomePage';
 import { Page, expect, test } from '@playwright/test';
 import { getRandomString, lockedUserLogin, standardUserLogin, validPassword } from '@utils/data-helpers/data-helpers';
 
-test.describe('Homepage tests', () => {
+test.describe('Home page tests', () => {
   let homePage: HomePage;
   test.beforeEach(async ({ page }) => {
     homePage = new HomePage(page);
